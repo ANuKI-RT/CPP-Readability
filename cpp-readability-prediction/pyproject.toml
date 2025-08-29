@@ -1,0 +1,18 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readability-for-c"
+version = "0.0.1"
+description = "CLI application for extracting source code readability features"
+readme = "README.md"
+authors = [
+    { name = "Tien Duc Nguyen", email = "nguyen69@ads.uni-passau.de" },
+    { name = "Elisabeth Griebl", email = "Elisabeth.Griebl@uni-passau.de" },
+]
+
+[project.scripts]
+readability-for-c = "readability_for_c.cli:run_cli"
